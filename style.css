@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,35 +17,75 @@ body {
 
 .testimonial {
   border: 1px solid black;
+  color: white;
+  padding: 2rem;
+  display: grid;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.verified {
+  opacity: 0.5;
+}
+
+.body {
+  opacity: 0.7;
+}
+
+.body,
+.verified {
+  font-size: 13px;
+}
+
+.testimonial > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.barlow-semi-condensed-medium {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-semibold {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 @media screen and (min-width: 800px) {
   body {
-    padding: 4rem;
+    padding: 3rem;
   }
 
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 250px);
+    grid-template-rows: repeat(4, auto);
   }
 
-  .daniel-testimonial, .kira-testimonial {
+  .kira-testimonial {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+  }
+
+  .daniel-testimonial,
+  .patrick-testimonial {
     grid-column-start: span 2;
-  }
-
-  .jeanette-testimonial {
-    grid-row-start: span 2;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   body {
-    padding: 8rem;
+    padding: 6rem;
   }
 
   .testimonials {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, auto);
   }
 
   .daniel-testimonial {
