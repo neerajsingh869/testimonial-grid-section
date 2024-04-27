@@ -45,6 +45,13 @@ body {
   align-items: center;
 }
 
+.daniel-testimonial {
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 20%;
+  background-size: 7.5rem;
+}
+
 .barlow-semi-condensed-medium {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
