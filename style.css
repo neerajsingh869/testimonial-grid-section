@@ -8,6 +8,7 @@
 
 body {
   padding: 2rem;
+  background-color: rgb(245, 245, 254);
 }
 
 .testimonials {
@@ -16,7 +17,7 @@ body {
 }
 
 .testimonial {
-  border: 1px solid black;
+  border-radius: 0.5rem;
   color: white;
   padding: 2rem;
   display: grid;
