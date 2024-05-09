@@ -7,7 +7,7 @@
 }
 
 body {
-  padding: 2rem;
+  padding: 4.3rem;
   background-color: rgb(245, 245, 254);
 }
 
@@ -72,10 +72,6 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-  body {
-    padding: 3rem;
-  }
-
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -94,10 +90,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  body {
-    padding: 6rem;
-  }
-
   .testimonials {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
